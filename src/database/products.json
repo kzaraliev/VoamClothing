@@ -79,5 +79,21 @@
             { "filePath": "/images/TRACKSUIT2.jpg" }
         ],
         "description": "A sleek midnight green tracksuit designed for both comfort and style. Featuring a relaxed fit and premium fabric, it’s perfect for workouts or casual wear."
+    },
+    {
+        "id": "f0a1863b-94ab-4319-a96b-8fbdb8d141a9",
+        "name": "AGWYT* Grey Tracksuit",
+        "price": 200,
+        "availability": "In Stock",
+        "sizes": [
+            { "name": "S" },
+            { "name": "M" },
+            { "name": "L" }
+        ],
+        "images": [
+            { "filePath": "/images/AGWYT-Tracksuit-Gray.jpg" },
+            { "filePath": "/images/AGWYT-Tracksuit-Gray-Back.jpg" }
+        ],
+        "description": "A sleek AGWYT* Grey Tracksuit designed for both comfort and style. Featuring a relaxed fit and premium fabric, it’s perfect for workouts or casual wear."
     }
 ]
