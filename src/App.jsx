@@ -16,7 +16,7 @@ import ShoppingCart from "./components/ShoppingCart/ShoppingCart.jsx";
 import Checkout from "./components/Checkout/Checkout.jsx";
 
 // Define your SVG URL
-import svgURL from "./assets/cross.svg";
+import svgURL from "/assets/cross.svg";
 
 // Function to generate random background styles
 const generateSVGBackgrounds = (count) => {
