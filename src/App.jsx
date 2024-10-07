@@ -74,7 +74,7 @@ function App() {
           overflow: "hidden",
         }}
       >
-        <Navigation />
+        {/* <Navigation /> */}
         {svgBackgrounds.map((style, index) => (
           <div key={index} style={style} />
         ))}
@@ -88,7 +88,7 @@ function App() {
           <Route path={Path.Checkout} element={<Checkout />} />
           <Route path={Path.NotFound} element={<NotFound />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </CartProvider>
   );
