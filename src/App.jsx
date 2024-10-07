@@ -74,7 +74,7 @@ function App() {
           overflow: "hidden",
         }}
       >
-        {/* <Navigation /> */}
+        <Navigation />
         {svgBackgrounds.map((style, index) => (
           <div key={index} style={style} />
         ))}
