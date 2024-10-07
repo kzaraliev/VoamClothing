@@ -7,7 +7,7 @@ export default function Pagination({ productsPerPage, totalProducts, paginate })
     pageNumbers.push(i);
     }
 
-    if (pageNumbers < 2) {
+    if (pageNumbers.length < 2) {
         return
     }
 

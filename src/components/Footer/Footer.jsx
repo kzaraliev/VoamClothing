@@ -7,7 +7,7 @@ function Footer() {
     const [modalShow, setModalShow] = useState(false);
 
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
         <PrivacyPolicy
         show={modalShow}
         onHide={() => setModalShow(false)}
@@ -16,7 +16,7 @@ function Footer() {
       <p className={styles.copyright}>
         Copyright © 2024 Voam Clothing. All Rights Reserved
       </p>
-    </div>
+    </footer>
   );
 }
 

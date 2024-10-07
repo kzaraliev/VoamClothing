@@ -145,6 +145,7 @@ export default function ProductDetails() {
                   onChange={onChange}
                   value={values.amount}
                   className={styles.amountSelector}
+                  aria-label="Amount"
                 />
               </div>
               <Button
