@@ -69,6 +69,6 @@ jobs:
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: d31bf649a8313bf5400f64037ff2eecb
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: voamclothing
           directory: dist
