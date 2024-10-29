@@ -17,7 +17,7 @@ export default function PrivacyPolicy(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body className={styles.modal}>
-        <h5>Last Updated: 27.09.2023</h5>
+        <h5>Last Updated: 27.10.2024</h5>
         <p>
           Welcome to Voam Clothing! We value your trust and are committed to
           protecting your privacy. This Privacy Policy is designed to help you

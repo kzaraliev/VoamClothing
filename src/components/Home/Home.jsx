@@ -10,7 +10,7 @@ import RecentlyAddedProducts from "./RecentlyAddedProducts/RecentlyAddedProducts
 function Home() {
   return (
     <div className={styles.home}>
-      <h1 className={styles.title}>Voam</h1>
+      <h1 className={styles.title}>Voam Clothing ®</h1>
       <h2 className={styles.slogan}>
         Elevate Your Urban Vibe with Every Stride!
       </h2>
