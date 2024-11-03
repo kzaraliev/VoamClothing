@@ -89,7 +89,7 @@ export default function ProductDetails() {
   return (
     <>
       <button className={styles.backButton} onClick={() => navigate(Path.Items)}>
-        <IoArrowUndoCircle className={styles.backIcon} />Back
+        <IoArrowUndoCircle className={styles.backIcon} />All Items
       </button>
       <div className={styles.container}>
         <div className={styles.content}>
