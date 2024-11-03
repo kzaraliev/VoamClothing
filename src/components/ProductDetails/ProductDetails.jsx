@@ -106,10 +106,10 @@ export default function ProductDetails() {
           <h1 className={styles.productName}>{product.name}</h1>
           <div className={styles.productInfo}>
             <p className={styles.price}>
-              <b>Price</b>: {product.price} lv.
+              <b style={{ color: "#3b3b3b" }}>Price</b>: {product.price} lv.
             </p>
             <p className={styles.description}>
-              <b>Description</b>: {product.description}
+              <b style={{ color: "#3b3b3b" }}>Description</b>: {product.description}
             </p>
             <Form className={styles.formAddToCart} onSubmit={onSubmit}>
               {(errors == errorMessages.invalidSize ||

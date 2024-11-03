@@ -24,12 +24,12 @@ function Contact() {
                 </li>
             </ul>
 
-            <Accordion bg="dark" data-bs-theme="dark" className={styles.accordion}>
+            <Accordion className={styles.accordion}>
                 <h2 className={styles.accordionTitle}>Frequently Asked Questions</h2>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>How long does delivery take?</Accordion.Header>
                     <Accordion.Body>
-                        The delivery time depends on your location and the availability of the product. Once you place an order, you will receive a confirmation email with detailed information about your delivery estimate. Generally, our standard delivery time ranges from 3 to 5 business days.
+                        The delivery time depends on your location and the availability of the product. Once you place an order, you will receive a confirmation email with detailed information about your order. Generally, our standard delivery time ranges from 3 to 5 business days.
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
@@ -41,7 +41,7 @@ function Contact() {
                 <Accordion.Item eventKey="2">
                     <Accordion.Header>Can i return a product?</Accordion.Header>
                     <Accordion.Body>
-                        Absolutely! We want you to love your purchase. If you are not completely satisfied with an item, you may return it within 30 days of the purchase date for a refund or exchange. Just send us a message via email - <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=voaminfo@gmail.com" target="_blank" rel="noreferrer">voaminfo@gmail.com</a>. The message must contain the order number!
+                        Absolutely! We want you to love your purchase. If you are not completely satisfied with an item, you may return it within 1 week of the purchase date for a refund or exchange. Just send us a message via email - <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=voaminfo@gmail.com" target="_blank" rel="noreferrer">voaminfo@gmail.com</a>. The message must contain the order number!
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="3">

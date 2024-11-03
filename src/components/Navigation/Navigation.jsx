@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { PiShoppingCartDuotone } from "react-icons/pi";
 
 import Path from "../../utils/paths.js";
 
@@ -19,13 +20,18 @@ function Navigation() {
       collapseOnSelect
       className="bg-body-tertiary"
       expand="lg"
-      bg="dark"
       expanded={expanded}
-      data-bs-theme="dark"
+      style={{ border: "1px solid black" }}
     >
       <Container>
         <Navbar.Brand as={Link} to={Path.Home}>
-          Voam
+          <img
+            src="/assets/logo.png"
+            width="180"
+            height="60"
+            className="d-inline-block align-top"
+            alt="Voam logo"
+          />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -53,6 +59,7 @@ function Navigation() {
               onClick={handleNavItemClick}
             >
               Shopping Cart
+              <PiShoppingCartDuotone />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

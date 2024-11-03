@@ -16,7 +16,7 @@ import ShoppingCart from "./components/ShoppingCart/ShoppingCart.jsx";
 import Checkout from "./components/Checkout/Checkout.jsx";
 
 // Define your SVG URL
-import svgURL from "/assets/cross.svg";
+import svgURL from "/assets/background_text.svg";
 
 // Function to generate random background styles
 const generateSVGBackgrounds = (count) => {
@@ -36,7 +36,7 @@ const generateSVGBackgrounds = (count) => {
 };
 
 function App() {
-  const [backgroundCount, setBackgroundCount] = useState(20);
+  const [backgroundCount, setBackgroundCount] = useState(40);
 
   useEffect(() => {
     // Function to handle resize events
@@ -46,7 +46,7 @@ function App() {
       } else if (window.innerWidth <= 1440) {
         setBackgroundCount(10);
       } else {
-        setBackgroundCount(20);
+        setBackgroundCount(40);
       }
     };
 
@@ -69,7 +69,7 @@ function App() {
       <div
         style={{
           position: "relative",
-          backgroundColor: "#3b444b",
+          backgroundColor: "#ffff",
           zIndex: "1",
           overflow: "hidden",
         }}

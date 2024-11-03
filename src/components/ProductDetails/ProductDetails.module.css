@@ -20,6 +20,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border: 1px solid black;
 }
 
 .productDetails {
@@ -35,14 +36,13 @@
 .productName {
   font-weight: bold;
   font-size: 4rem;
-  color: #ffffff;
 }
 
 .productInfo {
   font-size: larger;
   padding-bottom: 12px;
   margin-bottom: 12px;
-  color: #ffffffb9;
+  color: #808080;
 }
 
 .price {

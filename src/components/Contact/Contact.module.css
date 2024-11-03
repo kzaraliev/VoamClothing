@@ -11,12 +11,11 @@
 
 .title {
   font-size: 5.5rem;
-  color: #ffffec;
 }
 
 .subtitle {
   font-size: 1.5rem;
-  color: #c9c9c9;
+  color: #808080;
   width: 80%;
   text-align: center;
   margin: 24px 0;
@@ -55,7 +54,7 @@
 .contactTitle {
   text-align: center;
   margin: 18px 0;
-  color: #dbdbdb;
+  color: #808080;
 }
 
 .accordion {
@@ -66,7 +65,6 @@
   font-size: 3rem;
   text-align: center;
   padding: 18px;
-  color: #ffffec;
 }
 
 @media screen and (max-width: 720px) {
@@ -83,8 +81,8 @@
   }
 
   .icon {
-    font-size: 55px;
-    padding: 25%;
+    font-size: 64px;
+    padding: 30%;
   }
 
   .contactTitle {
