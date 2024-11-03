@@ -1,5 +1,5 @@
-import { useEffect, useState, useMemo, useContext } from "react";
-import { useNavigate, useParams, Link } from "react-router-dom";
+import { useEffect, useState, useMemo } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import useForm from "../../hooks/useForm";
 import Swal from "sweetalert2";
 
@@ -7,6 +7,7 @@ import Figure from "react-bootstrap/Figure";
 import Carousel from "react-bootstrap/Carousel";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { IoArrowUndoCircle } from "react-icons/io5";
 
 import { useCart } from "../../context/cartContext";
 import * as productService from "../../services/productService";
@@ -86,79 +87,85 @@ export default function ProductDetails() {
   );
 
   return (
-    <div className={styles.container}>
-      <div className={styles.content}>
-        <Carousel fade className={styles.carousel} data-bs-theme="dark">
-          {Object.keys(product).length !== 0 &&
-            product.images.map((image, index) => {
-              return (
-                <Carousel.Item key={index}>
-                  <Figure.Image
-                    alt="product-img"
-                    src={image.filePath}
-                    className={styles.productImg}
+    <>
+      <button className={styles.backButton} onClick={() => navigate(Path.Items)}>
+        <IoArrowUndoCircle className={styles.backIcon} />Back
+      </button>
+      <div className={styles.container}>
+        <div className={styles.content}>
+          <Carousel fade className={styles.carousel} data-bs-theme="dark">
+            {Object.keys(product).length !== 0 &&
+              product.images.map((image, index) => {
+                return (
+                  <Carousel.Item key={index}>
+                    <Figure.Image
+                      alt="product-img"
+                      src={image.filePath}
+                      className={styles.productImg}
+                    />
+                  </Carousel.Item>
+                );
+              })}
+          </Carousel>
+          <div className={styles.productDetails}>
+            <h1 className={styles.productName}>{product.name}</h1>
+            <div className={styles.productInfo}>
+              <p className={styles.price}>
+                <b style={{ color: "#3b3b3b" }}>Price</b>: {product.price} lv.
+              </p>
+              <p className={styles.description}>
+                <b style={{ color: "#3b3b3b" }}>Description</b>:{" "}
+                {product.description}
+              </p>
+              <Form className={styles.formAddToCart} onSubmit={onSubmit}>
+                {(errors == errorMessages.invalidSize ||
+                  errors === errorMessages.notEnoughQuantity ||
+                  errors === errorMessages.zeroOrEmptyInput) && (
+                  <p className={styles.invalid}>{errors}</p>
+                )}
+                <div className={styles.sizeAndQuantityContainer}>
+                  <Form.Select
+                    name={OrderFormKeys.Size}
+                    onChange={onChange}
+                    value={values.size}
+                    className={styles.sizeSelector}
+                  >
+                    <option value="">Select size</option>
+                    {Object.keys(product).length !== 0 &&
+                      product.sizes.map((size) => {
+                        return (
+                          <option
+                            value={size.name}
+                            key={size.name}
+                            name={size.name}
+                          >
+                            {size.name}
+                          </option>
+                        );
+                      })}
+                  </Form.Select>
+                  <Form.Control
+                    type="number"
+                    id={OrderFormKeys.Amount}
+                    name={OrderFormKeys.Amount}
+                    onChange={onChange}
+                    value={values.amount}
+                    className={styles.amountSelector}
+                    aria-label="Amount"
                   />
-                </Carousel.Item>
-              );
-            })}
-        </Carousel>
-        <div className={styles.productDetails}>
-          <h1 className={styles.productName}>{product.name}</h1>
-          <div className={styles.productInfo}>
-            <p className={styles.price}>
-              <b style={{ color: "#3b3b3b" }}>Price</b>: {product.price} lv.
-            </p>
-            <p className={styles.description}>
-              <b style={{ color: "#3b3b3b" }}>Description</b>: {product.description}
-            </p>
-            <Form className={styles.formAddToCart} onSubmit={onSubmit}>
-              {(errors == errorMessages.invalidSize ||
-                errors === errorMessages.notEnoughQuantity ||
-                errors === errorMessages.zeroOrEmptyInput) && (
-                <p className={styles.invalid}>{errors}</p>
-              )}
-              <div className={styles.sizeAndQuantityContainer}>
-                <Form.Select
-                  name={OrderFormKeys.Size}
-                  onChange={onChange}
-                  value={values.size}
-                  className={styles.sizeSelector}
+                </div>
+                <Button
+                  className={styles.submitButton}
+                  type="submit"
+                  variant="success"
                 >
-                  <option value="">Select size</option>
-                  {Object.keys(product).length !== 0 &&
-                    product.sizes.map((size) => {
-                      return (
-                        <option
-                          value={size.name}
-                          key={size.name}
-                          name={size.name}
-                        >
-                          {size.name}
-                        </option>
-                      );
-                    })}
-                </Form.Select>
-                <Form.Control
-                  type="number"
-                  id={OrderFormKeys.Amount}
-                  name={OrderFormKeys.Amount}
-                  onChange={onChange}
-                  value={values.amount}
-                  className={styles.amountSelector}
-                  aria-label="Amount"
-                />
-              </div>
-              <Button
-                className={styles.submitButton}
-                type="submit"
-                variant="success"
-              >
-                Add to cart
-              </Button>
-            </Form>
+                  Add to cart
+                </Button>
+              </Form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
