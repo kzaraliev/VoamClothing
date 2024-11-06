@@ -94,6 +94,7 @@ export default function Products() {
                   name={product.name}
                   price={product.price}
                   image={product.images[0].filePath}
+                  anchor={product.anchor}
                   className={styles.item}
                 />
               ))}

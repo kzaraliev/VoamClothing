@@ -5,15 +5,20 @@ import { FaTshirt } from "react-icons/fa";
 import styles from "./Products.module.css";
 import Path from "../../utils/paths";
 
-export default function ProductCard({ id, name, price, image }) {
-
+export default function ProductCard({ id, name, price, image, anchor }) {
   return (
     <Link to={`${Path.Items}/${id}`} className={styles.cardLink}>
       <Card className={styles.cardBackground}>
-        <Card.Img variant="top" src={image} className={styles.cardImg} alt="card image"/>
+        <Card.Img
+          variant="top"
+          src={image}
+          className={styles.cardImg}
+          alt="card image"
+        />
         <Card.Body className={styles.cardBody}>
           <Card.Title className={styles.cardTitle}>{name}</Card.Title>
-          <Card.Text className={styles.price}>Price: {price} lv.</Card.Text>
+          {anchor && <span className={styles.anchor}>{anchor} lv.</span>}
+          <Card.Text className={styles.price}>Price: {price} lv.</Card.Text> 
         </Card.Body>
       </Card>
     </Link>

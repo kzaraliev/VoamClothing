@@ -47,6 +47,12 @@
   font-size: large;
 }
 
+.anchor {
+  text-decoration: line-through;
+  color: rgb(245, 49, 49);
+  margin-bottom: 0;
+}
+
 .products {
   display: flex;
   flex-direction: column;
@@ -159,7 +165,8 @@
     height: auto; /* Adjust image height to maintain aspect ratio */
   }
 
-  .price {
+  .price,
+  .anchor {
     font-size: small;
   }
 
@@ -185,7 +192,7 @@
     font-size: x-large !important;
   }
 
-  .price {
+  .price, .anchor {
     font-size: medium;
   }
 }
