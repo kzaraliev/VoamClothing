@@ -88,8 +88,12 @@ export default function ProductDetails() {
 
   return (
     <>
-      <button className={styles.backButton} onClick={() => navigate(Path.Items)}>
-        <IoArrowUndoCircle className={styles.backIcon} />All Items
+      <button
+        className={styles.backButton}
+        onClick={() => navigate(Path.Items)}
+      >
+        <IoArrowUndoCircle className={styles.backIcon} />
+        All Items
       </button>
       <div className={styles.container}>
         <div className={styles.content}>
@@ -110,6 +114,7 @@ export default function ProductDetails() {
           <div className={styles.productDetails}>
             <h1 className={styles.productName}>{product.name}</h1>
             <div className={styles.productInfo}>
+              {product?.anchor && <p className={styles.anchor}>{product?.anchor} lv.</p>}
               <p className={styles.price}>
                 <b style={{ color: "#3b3b3b" }}>Price</b>: {product.price} lv.
               </p>

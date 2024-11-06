@@ -66,6 +66,12 @@
   font-size: x-large;
 }
 
+.anchor {
+  text-decoration: line-through;
+  color: red;
+  margin-bottom: 0;
+}
+
 .description {
   overflow-y: scroll;
   max-height: 12vh;
@@ -149,7 +155,8 @@
   }
 
   .price,
-  .description {
+  .description,
+  .anchor {
     font-size: 1rem;
   }
 
@@ -189,7 +196,8 @@
   }
 
   .price,
-  .description {
+  .description,
+  .anchor {
     font-size: 1.3rem;
   }
 

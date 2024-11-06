@@ -1,99 +1,152 @@
 [
     {
-        "id": "e7b99b7c-5b84-4a1a-83d4-68d9e5a9fcb2",
-        "name": "AGWYT TEE BLACK",
-        "price": 50,
-        "availability": "In Stock",
-        "sizes": [
-            { "name": "S" },
-            { "name": "M" },
-            { "name": "L" }
-        ],
-        "images": [
-            { "filePath": "/images/AGWYT-Black.jpg" },
-            { "filePath": "/images/AGWYT1.jpg" },
-            { "filePath": "/images/AGWYT2.jpg" }
-        ],
-        "description": "A classic black tee featuring a soft, breathable fabric and a minimalist design. Perfect for everyday wear and layering."
-    },
-    {
-        "id": "c1c1d9e2-807b-48df-92b5-f0b0c678f3f8",
-        "name": "AGWYT TEE WHITE",
-        "price": 50,
-        "availability": "In Stock",
-        "sizes": [
-            { "name": "S" },
-            { "name": "M" }
-        ],
-        "images": [
-            { "filePath": "/images/AGWYT-White.jpg" },
-            { "filePath": "/images/AGWYT1.jpg" },
-            { "filePath": "/images/AGWYT2.jpg" }
-        ],
-        "description": "A timeless white tee with a soft, lightweight fabric. Ideal for a clean, casual look with versatile styling options."
-    },
-    {
         "id": "f4a1a1e2-58bc-4d57-9dc7-0a58239a9f3e",
         "name": "EMBROIDERY TEE BLACK",
-        "price": 55,
+        "price": 40,
+        "anchor": 55,
         "availability": "Out of Stock",
         "sizes": [
-            { "name": "M" },
-            { "name": "L" },
-            { "name": "XL" }
+            {
+                "name": "L"
+            }
         ],
         "images": [
-            { "filePath": "/images/Embroidery-Tee-Black.jpg" },
-            { "filePath": "/images/Embroidery-Tee1.jpg" },
-            { "filePath": "/images/Embroidery-Tee2.jpg" }
+            {
+                "filePath": "/images/Embroidery-Tee-Black.jpg"
+            },
+            {
+                "filePath": "/images/Embroidery-Tee.png"
+            }
         ],
-        "description": "Elevate your style with this black tee featuring intricate embroidery. Made from high-quality cotton for a comfortable fit and unique look."
-    },
-    {
-        "id": "3c3c26bb-9e0c-4f97-bf59-d0e27ef324c6",
-        "name": "DEVOTION TEE WHITE",
-        "price": 50,
-        "availability": "In Stock",
-        "sizes": [
-            { "name": "S" },
-            { "name": "M" },
-            { "name": "L" },
-            { "name": "XL" }
-        ],
-        "images": [
-            { "filePath": "/images/Devotion1.jpg" },
-            { "filePath": "/images/Devotion2.jpg" }
-        ],
-        "description": "A stylish white tee with a modern design. Crafted for comfort and durability, it’s perfect for both casual outings and relaxed days at home."
+        "description": "Iconic design, long lasting with an embroidered logo"
     },
     {
         "id": "f8c9b4d2-d78f-4a28-a88f-d2e8b5f14b74",
         "name": "MIDNIGHT GREEN TRACKSUIT",
-        "price": 150,
+        "price": 130,
+        "anchor": 180,
         "availability": "In Stock",
         "sizes": [
-            { "name": "One Size" }
+            {
+                "name": "One Size"
+            }
         ],
         "images": [
-            { "filePath": "/images/TRACKSUIT1.jpg" },
-            { "filePath": "/images/TRACKSUIT2.jpg" }
+            {
+                "filePath": "/images/TRACKSUIT1.jpg"
+            },
+            {
+                "filePath": "/images/TRACKSUIT2.jpg"
+            },
+            {
+                "filePath": "/images/TRACKSUIT.png"
+            }
         ],
-        "description": "A sleek midnight green tracksuit designed for both comfort and style. Featuring a relaxed fit and premium fabric, it’s perfect for workouts or casual wear."
+        "description": "A midnight green tracksuit with a hoodie and matching bottoms, offering a sleek, comfortable look with a streetwear vibe."
     },
     {
-        "id": "f0a1863b-94ab-4319-a96b-8fbdb8d141a9",
-        "name": "AGWYT* Grey Tracksuit",
-        "price": 200,
+        "id": "fd13311d-6fd2-43e9-9d70-a6dc8125b431",
+        "name": "AGWYT* Black Tee",
+        "price": 45,
+        "anchor": 60,
         "availability": "In Stock",
         "sizes": [
-            { "name": "S" },
-            { "name": "M" },
-            { "name": "L" }
+            {
+                "name": "M"
+            },
+            {
+                "name": "L"
+            }
         ],
         "images": [
-            { "filePath": "/images/AGWYT-Tracksuit-Gray.jpg" },
-            { "filePath": "/images/AGWYT-Tracksuit-Gray-Back.jpg" }
+            {
+                "filePath": "/images/AGWYT_BLACK_FR.png"
+            },
+            {
+                "filePath": "/images/AGWYT_BLACK_BK.png"
+            },
+            {
+                "filePath": "/images/AGWYT_BLACK_MODEL.png"
+            }
         ],
-        "description": "A sleek AGWYT* Grey Tracksuit designed for both comfort and style. Featuring a relaxed fit and premium fabric, it’s perfect for workouts or casual wear."
+        "description": "This t-shirt features a relaxed fit. Made from soft, breathable cotton, it offers comfort and durability for everyday wear. Inspired by our emblematic mouth logo, remodeled by us. Crafted with love."
+    },
+    {
+        "id": "f58bcd8b-352d-4dd8-a50f-1eb80100c944",
+        "name": "AGWYT* White Tee",
+        "price": 45,
+        "anchor": 60,
+        "availability": "In Stock",
+        "sizes": [
+            {
+                "name": "M"
+            },
+            {
+                "name": "L"
+            }
+        ],
+        "images": [
+            {
+                "filePath": "/images/AGWYT_WHITE_FR.png"
+            },
+            {
+                "filePath": "/images/AGWYT_WHITE_BK.png"
+            },
+            {
+                "filePath": "/images/AGWYT_WHITE_MODEL.png"
+            }
+        ],
+        "description": "This t-shirt features a relaxed fit. Made from soft, breathable cotton, it offers comfort and durability for everyday wear. Inspired by our emblematic mouth logo, remodeled by us. Crafted with love."
+    },
+    {
+        "id": "039ff45b-d995-4aad-ab78-7e90bf332633",
+        "name": "BEANIE",
+        "price": 15,
+        "anchor": 30,
+        "availability": "In Stock",
+        "sizes": [
+            {
+                "name": "One size"
+            }
+        ],
+        "images": [
+            {
+                "filePath": "/images/BEANIE_FR.png"
+            },
+            {
+                "filePath": "/images/BEANIE_BK.png"
+            },
+            {
+                "filePath": "/images/BEANIE-MODEL.png"
+            }
+        ],
+        "description": "Eye-catching design keeping you warm during the cold days"
+    },
+    {
+        "id": "acd1d11a-e739-4415-ad8a-59365c52d01e",
+        "name": "AGWYT* BLACK TRACKSUIT",
+        "price": 180,
+        "anchor": 205,
+        "availability": "In Stock",
+        "sizes": [
+            {
+                "name": "M"
+            },
+            {
+                "name": "L"
+            }
+        ],
+        "images": [
+            {
+                "filePath": "/images/AGWYT_BLACK_TRACKSUIT_MODEL.png"
+            },
+            {
+                "filePath": "/images/AGWYT_BLACK_TRACKSUIT1.jpg"
+            },
+            {
+                "filePath": "/images/AGWYT_BLACK_TRACKSUIT2.jpg"
+            }
+        ],
+        "description": "Comfortable hoodie with a relaxed fit and matching jogger bottoms, including a redesign of our staple mouth logo & print on the back"
     }
 ]
