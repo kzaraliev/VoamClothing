@@ -28,7 +28,10 @@
         "availability": "In Stock",
         "sizes": [
             {
-                "name": "One Size"
+                "name": "M"
+            },
+            {
+                "name": "L"
             }
         ],
         "images": [
