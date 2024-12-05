@@ -16,7 +16,6 @@ import styles from "./ProductDetails.module.css";
 import { OrderFormKeys } from "../../utils/constants";
 
 export default function ProductDetails() {
-  //Separate form in new component
   const { id } = useParams();
   const [product, setProduct] = useState({});
   const [errors, setErrors] = useState("");
@@ -122,51 +121,55 @@ export default function ProductDetails() {
                 <b style={{ color: "#3b3b3b" }}>Description</b>:{" "}
                 {product.description}
               </p>
-              <Form className={styles.formAddToCart} onSubmit={onSubmit}>
-                {(errors == errorMessages.invalidSize ||
-                  errors === errorMessages.notEnoughQuantity ||
-                  errors === errorMessages.zeroOrEmptyInput) && (
-                  <p className={styles.invalid}>{errors}</p>
-                )}
-                <div className={styles.sizeAndQuantityContainer}>
-                  <Form.Select
-                    name={OrderFormKeys.Size}
-                    onChange={onChange}
-                    value={values.size}
-                    className={styles.sizeSelector}
+              {product.availability === "Out of Stock" ? (
+                <p className={styles.outOfStock}>Out of Stock :(</p>
+              ) : (
+                <Form className={styles.formAddToCart} onSubmit={onSubmit}>
+                  {(errors === errorMessages.invalidSize ||
+                    errors === errorMessages.notEnoughQuantity ||
+                    errors === errorMessages.zeroOrEmptyInput) && (
+                    <p className={styles.invalid}>{errors}</p>
+                  )}
+                  <div className={styles.sizeAndQuantityContainer}>
+                    <Form.Select
+                      name={OrderFormKeys.Size}
+                      onChange={onChange}
+                      value={values.size}
+                      className={styles.sizeSelector}
+                    >
+                      <option value="">Select size</option>
+                      {Object.keys(product).length !== 0 &&
+                        product.sizes.map((size) => {
+                          return (
+                            <option
+                              value={size.name}
+                              key={size.name}
+                              name={size.name}
+                            >
+                              {size.name}
+                            </option>
+                          );
+                        })}
+                    </Form.Select>
+                    <Form.Control
+                      type="number"
+                      id={OrderFormKeys.Amount}
+                      name={OrderFormKeys.Amount}
+                      onChange={onChange}
+                      value={values.amount}
+                      className={styles.amountSelector}
+                      aria-label="Amount"
+                    />
+                  </div>
+                  <Button
+                    className={styles.submitButton}
+                    type="submit"
+                    variant="success"
                   >
-                    <option value="">Select size</option>
-                    {Object.keys(product).length !== 0 &&
-                      product.sizes.map((size) => {
-                        return (
-                          <option
-                            value={size.name}
-                            key={size.name}
-                            name={size.name}
-                          >
-                            {size.name}
-                          </option>
-                        );
-                      })}
-                  </Form.Select>
-                  <Form.Control
-                    type="number"
-                    id={OrderFormKeys.Amount}
-                    name={OrderFormKeys.Amount}
-                    onChange={onChange}
-                    value={values.amount}
-                    className={styles.amountSelector}
-                    aria-label="Amount"
-                  />
-                </div>
-                <Button
-                  className={styles.submitButton}
-                  type="submit"
-                  variant="success"
-                >
-                  Add to cart
-                </Button>
-              </Form>
+                    Add to cart
+                  </Button>
+                </Form>
+              )}
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@
         "name": "EMBROIDERY TEE BLACK",
         "price": 40,
         "anchor": 55,
-        "availability": "Out of Stock",
+        "availability": "In Stock",
         "sizes": [
             {
                 "name": "L"
@@ -106,7 +106,7 @@
         "name": "BEANIE",
         "price": 15,
         "anchor": 30,
-        "availability": "In Stock",
+        "availability": "Out of Stock",
         "sizes": [
             {
                 "name": "One size"

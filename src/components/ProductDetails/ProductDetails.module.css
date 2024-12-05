@@ -123,6 +123,17 @@
   align-items: center;
 }
 
+.outOfStock {
+  font-size: 1.2rem;
+  color: #ff4d4f; /* Red color to signify unavailability */
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  background-color: #ffe6e6; /* Light red background to catch attention */
+  padding: 10px;
+  border-radius: 5px;
+}
+
 .productImg {
   border: 1px solid black;
 }

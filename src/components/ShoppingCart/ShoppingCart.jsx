@@ -17,20 +17,29 @@ export default function ShoppingCart() {
       const products = await Promise.all(
         cart.map(async (item) => {
           const product = await productService.getOne(item.productId);
+
+          if (product.availability === "Out of Stock") {
+            // If the product is out of stock, skip it by returning null
+            removeFromCart(item.productId, item.size);
+            return null;
+          }
+
           return {
             productId: item.productId,
             name: product.name,
             size: item.size,
             price: product.price,
             quantity: item.quantity,
-            image: product.images[0]?.filePath || null, 
+            image: product.images[0]?.filePath || null,
           };
         })
       );
-      setCartData(products);
+
+      // Filter out the null values from out-of-stock products
+      setCartData(products.filter((product) => product !== null));
     }
     loadCartData();
-  }, [cart]);
+  }, [cart, removeFromCart]);
 
   function handleItemDelete(itemId, size) {
     setCartData((currentData) =>
