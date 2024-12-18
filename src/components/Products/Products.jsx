@@ -28,7 +28,7 @@ export default function Products() {
     productService
       .getAll()
       .then((result) => {
-        setProducts(result.reverse());
+        setProducts(result);
         setLoading(false);
       })
       .catch((err) => console.log(err));

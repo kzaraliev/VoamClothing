@@ -14,11 +14,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%; /* Ensure the item width remains consistent */
 }
 
 .cardLink {
   text-decoration: none;
-  min-width: 100%;
+  width: 100%; /* Adjust width to prevent stretching */
 }
 
 .cardBackground {
@@ -64,6 +65,9 @@
   display: flex;
   justify-content: center;
   margin: 64px auto;
+  gap: 1rem; /* Adjust gap to prevent stretching */
+  width: 100%; /* Ensure the container spans the full width */
+  max-width: 1200px; /* Restrict the max-width for consistency */
 }
 
 .icon {
@@ -152,8 +156,8 @@
 
   .grid {
     max-width: 90%;
-    grid-template-columns: repeat(2, 1fr); /* This creates two columns */
-    gap: 1rem; /* Adjust the gap as needed for visual appeal on smaller screens */
+    grid-template-columns: repeat(2, 1fr); /* Keep two columns for smaller screens */
+    gap: 1rem; /* Adjust the gap for smaller screens */
   }
 
   .cardTitle {

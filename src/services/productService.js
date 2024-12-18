@@ -6,7 +6,7 @@ export const getAll = async () => {
 
 export const getLatest = async () => {
     const allProducts = Object.values(products);
-    const latestProducts = allProducts.slice(allProducts.length - 3);
+    const latestProducts = allProducts.slice(0, 3);
 
     return latestProducts;
 };
