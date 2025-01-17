@@ -2,7 +2,7 @@
   {
     "id": "45ca5cff-27e2-4535-a8d5-2bac6a0d7cc8",
     "name": "AGWYT* GRAY TRACKSUIT",
-    "price": 180,
+    "price": 170,
     "anchor": 205,
     "availability": "In Stock",
     "sizes": [
@@ -26,7 +26,7 @@
   {
     "id": "acd1d11a-e739-4415-ad8a-59365c52d01e",
     "name": "AGWYT* BLACK TRACKSUIT",
-    "price": 180,
+    "price": 170,
     "anchor": 205,
     "availability": "In Stock",
     "sizes": [
@@ -53,7 +53,7 @@
   {
     "id": "8fd5e131-7947-4153-8677-426eee8d5908",
     "name": "AGWYT* BLACK HOODIE",
-    "price": 95,
+    "price": 85,
     "anchor": 110,
     "availability": "In Stock",
     "sizes": [
@@ -83,7 +83,7 @@
   {
     "id": "bf9e2321-592d-4f1f-8abf-c2a64d4fe886",
     "name": "AGWYT* GRAY HOODIE",
-    "price": 100,
+    "price": 85,
     "anchor": 115,
     "availability": "In Stock",
     "sizes": [
@@ -167,7 +167,7 @@
   {
     "id": "f8c9b4d2-d78f-4a28-a88f-d2e8b5f14b74",
     "name": "MIDNIGHT GREEN TRACKSUIT",
-    "price": 120,
+    "price": 100,
     "anchor": 180,
     "availability": "In Stock",
     "sizes": [
