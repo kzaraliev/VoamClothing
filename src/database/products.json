@@ -4,7 +4,7 @@
     "name": "AGWYT* GRAY TRACKSUIT",
     "price": 170,
     "anchor": 205,
-    "availability": "In Stock",
+    "availability": "Out of Stock",
     "sizes": [
       {
         "name": "M"
@@ -85,7 +85,7 @@
     "name": "AGWYT* GRAY HOODIE",
     "price": 85,
     "anchor": 115,
-    "availability": "In Stock",
+    "availability": "Out of Stock",
     "sizes": [
       {
         "name": "S"
