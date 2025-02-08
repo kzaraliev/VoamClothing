@@ -103,7 +103,7 @@ export default function ProductDetails() {
           property="og:image"
           content={
             product.images && product.images.length > 0
-              ? product.images[0]
+              ? product.images[0].filePath
               : "../../assets/hoodie_icon.png"
           }
         />
@@ -118,7 +118,7 @@ export default function ProductDetails() {
           name="twitter:image"
           content={
             product.images && product.images.length > 0
-              ? product.images[0]
+              ? product.images[0].filePath
               : "../../assets/hoodie_icon.png"
           }
         />
