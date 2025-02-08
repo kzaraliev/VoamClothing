@@ -1,4 +1,4 @@
-name: Buid Test Deploy
+name: Buid & Deploy
 
 on:
   push:
