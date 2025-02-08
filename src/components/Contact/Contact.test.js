@@ -10,7 +10,7 @@ describe("Contact Component", () => {
   });
 
   test("renders the title", () => {
-    const titleElement = screen.getByRole("heading", { name: /contact/i });
+    const titleElement = screen.getByRole("heading", { name: /contacts/i });
     expect(titleElement).toBeInTheDocument();
   });
 
