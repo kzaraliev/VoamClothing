@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import useForm from "../../hooks/useForm";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 import Figure from "react-bootstrap/Figure";
 import Carousel from "react-bootstrap/Carousel";
@@ -87,6 +88,50 @@ export default function ProductDetails() {
 
   return (
     <>
+      <Helmet>
+        <title>Voam Clothing | {product.name || "Product"}</title>
+        <meta
+          name="description"
+          content={product.description || "Description unavailable"}
+        />
+        <meta property="og:title" content={product.name || "Product"} />
+        <meta
+          property="og:description"
+          content={product.description || "Description unavailable"}
+        />
+        <meta
+          property="og:image"
+          content={
+            product.images && product.images.length > 0
+              ? product.images[0]
+              : "../../assets/hoodie_icon.png"
+          }
+        />
+        <meta property="og:type" content="product" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={product.name || "Product"} />
+        <meta
+          name="twitter:description"
+          content={product.description || "Description unavailable"}
+        />
+        <meta
+          name="twitter:image"
+          content={
+            product.images && product.images.length > 0
+              ? product.images[0]
+              : "../../assets/hoodie_icon.png"
+          }
+        />
+
+        <meta
+          property="og:url"
+          content={`https://voamclothing.com/product/${product.id}`}
+        />
+        <meta
+          property="twitter:url"
+          content={`https://voamclothing.com/product/${product.id}`}
+        />
+      </Helmet>
       <button
         className={styles.backButton}
         onClick={() => navigate(Path.Items)}
@@ -113,7 +158,9 @@ export default function ProductDetails() {
           <div className={styles.productDetails}>
             <h1 className={styles.productName}>{product.name}</h1>
             <div className={styles.productInfo}>
-              {product?.anchor && <p className={styles.anchor}>{product?.anchor} lv.</p>}
+              {product?.anchor && (
+                <p className={styles.anchor}>{product?.anchor} lv.</p>
+              )}
               <p className={styles.price}>
                 <b style={{ color: "#3b3b3b" }}>Price</b>: {product.price} lv.
               </p>

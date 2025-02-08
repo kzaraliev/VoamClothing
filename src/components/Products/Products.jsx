@@ -7,6 +7,7 @@ import * as productService from "../../services/productService";
 import Pagination from "./Pagination.jsx";
 
 import ProductCard from "./ProductCard.jsx";
+import { Helmet } from "react-helmet-async";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
@@ -39,7 +40,9 @@ export default function Products() {
   const currentProducts = products.slice(indexOfFirstBook, indexOfLastBooks);
   const totalPages = Math.ceil(products.length / productsPerPage);
   const isLastPage = currentPage === totalPages;
-  const isSingleRowOnLastPage = isLastPage && (currentProducts.length === 2 || currentProducts.length === 1);
+  const isSingleRowOnLastPage =
+    isLastPage &&
+    (currentProducts.length === 2 || currentProducts.length === 1);
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
@@ -62,8 +65,35 @@ export default function Products() {
     setSortText(eventKey.charAt(0).toUpperCase() + eventKey.slice(1));
   }
 
+  const pageDescription = `Explore a wide range of fashion items on Voam, from stylish dresses to casual essentials. Find your next favorite outfit with our curated collection of trendy clothing.`;
+
   return (
     <>
+      <Helmet>
+        <title>Voam Clothing | All Items</title>
+        <meta name="title" content="Voam Clothing | All Items" />
+        <meta name="description" content={pageDescription} />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://voamclothing.com/items" />
+        <meta property="og:title" content="Voam Clothing | All Items" />
+        <meta property="og:description" content={pageDescription} />
+        <meta
+          property="og:image"
+          content="https://voamclothing.com/assets/banner.png"
+        />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://voamclothing.com/items" />
+        <meta property="twitter:title" content="Voam Clothing | All Items" />
+        <meta property="twitter:description" content={pageDescription} />
+        <meta
+          property="twitter:image"
+          content="https://voamclothing.com/assets/banner.png"
+        />
+      </Helmet>
       <div className={styles.products}>
         <div className={styles.header}>
           <h1 className={styles.title}>All Items:</h1>
@@ -86,7 +116,11 @@ export default function Products() {
           </div>
         ) : (
           <>
-            <div className={`${styles.grid} ${isSingleRowOnLastPage ? styles.centerSingleItem : ''}`}>
+            <div
+              className={`${styles.grid} ${
+                isSingleRowOnLastPage ? styles.centerSingleItem : ""
+              }`}
+            >
               {currentProducts.map((product) => (
                 <ProductCard
                   key={product.id}
