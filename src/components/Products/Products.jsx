@@ -7,7 +7,6 @@ import * as productService from "../../services/productService";
 import Pagination from "./Pagination.jsx";
 
 import ProductCard from "./ProductCard.jsx";
-import { Helmet } from "react-helmet-async";
 import SEO from "../SEO/SEO.jsx";
 
 export default function Products() {

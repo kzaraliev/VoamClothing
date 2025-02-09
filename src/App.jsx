@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async";
 
 import { CartProvider } from "./context/cartContext.jsx";
 
@@ -66,34 +65,32 @@ function App() {
   const svgBackgrounds = generateSVGBackgrounds(backgroundCount);
 
   return (
-    <HelmetProvider>
-      <CartProvider>
-        <div
-          style={{
-            position: "relative",
-            backgroundColor: "#ffff",
-            zIndex: "1",
-            overflow: "hidden",
-          }}
-        >
-          <Navigation />
-          {svgBackgrounds.map((style, index) => (
-            <div key={index} style={style} />
-          ))}
-          <Routes>
-            <Route path={Path.Home} element={<Home />} />
-            <Route path={Path.Items} element={<Products />} />
-            <Route path={`${Path.Items}/:id`} element={<ProductDetails />} />
-            <Route path={Path.About} element={<About />} />
-            <Route path={Path.Contacts} element={<Contact />} />
-            <Route path={Path.ShoppingCart} element={<ShoppingCart />} />
-            <Route path={Path.Checkout} element={<Checkout />} />
-            <Route path={Path.NotFound} element={<NotFound />} />
-          </Routes>
-          <Footer />
-        </div>
-      </CartProvider>
-    </HelmetProvider>
+    <CartProvider>
+      <div
+        style={{
+          position: "relative",
+          backgroundColor: "#ffff",
+          zIndex: "1",
+          overflow: "hidden",
+        }}
+      >
+        <Navigation />
+        {svgBackgrounds.map((style, index) => (
+          <div key={index} style={style} />
+        ))}
+        <Routes>
+          <Route path={Path.Home} element={<Home />} />
+          <Route path={Path.Items} element={<Products />} />
+          <Route path={`${Path.Items}/:id`} element={<ProductDetails />} />
+          <Route path={Path.About} element={<About />} />
+          <Route path={Path.Contacts} element={<Contact />} />
+          <Route path={Path.ShoppingCart} element={<ShoppingCart />} />
+          <Route path={Path.Checkout} element={<Checkout />} />
+          <Route path={Path.NotFound} element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </div>
+    </CartProvider>
   );
 }
 

@@ -7,7 +7,6 @@ import { TiShoppingCart } from "react-icons/ti";
 import CartItem from "./CartItem.jsx";
 import Path from "../../utils/paths.js";
 import * as productService from "../../services/productService.js";
-import { Helmet } from "react-helmet-async";
 import SEO from "../SEO/SEO.jsx";
 
 export default function ShoppingCart() {
