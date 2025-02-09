@@ -2,7 +2,6 @@ import { useEffect, useState, useMemo } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import useForm from "../../hooks/useForm";
 import Swal from "sweetalert2";
-import { Helmet } from "react-helmet-async";
 
 import Figure from "react-bootstrap/Figure";
 import Carousel from "react-bootstrap/Carousel";
@@ -15,6 +14,7 @@ import * as productService from "../../services/productService";
 import Path from "../../utils/paths";
 import styles from "./ProductDetails.module.css";
 import { OrderFormKeys } from "../../utils/constants";
+import SEO from "../SEO/SEO";
 
 export default function ProductDetails() {
   const { id } = useParams();
@@ -88,50 +88,17 @@ export default function ProductDetails() {
 
   return (
     <>
-      <Helmet>
-        <title>Voam Clothing | {product.name || "Product"}</title>
-        <meta
-          name="description"
-          content={product.description || "Description unavailable"}
-        />
-        <meta property="og:title" content={product.name || "Product"} />
-        <meta
-          property="og:description"
-          content={product.description || "Description unavailable"}
-        />
-        <meta
-          property="og:image"
-          content={
-            product.images && product.images.length > 0
-              ? "https://voamclothing.com" + product.images[0].filePath
-              : "../../assets/hoodie_icon.png"
-          }
-        />
-        <meta property="og:type" content="product" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={product.name || "Product"} />
-        <meta
-          name="twitter:description"
-          content={product.description || "Description unavailable"}
-        />
-        <meta
-          name="twitter:image"
-          content={
-            product.images && product.images.length > 0
-              ? "https://voamclothing.com" + product.images[0].filePath
-              : "../../assets/hoodie_icon.png"
-          }
-        />
-
-        <meta
-          property="og:url"
-          content={`https://voamclothing.com/product/${product.id}`}
-        />
-        <meta
-          property="twitter:url"
-          content={`https://voamclothing.com/product/${product.id}`}
-        />
-      </Helmet>
+      <SEO
+        title={`Voam Clothing | ${product.name || "Product"}`}
+        description={product.description || "Description unavailable"}
+        type="product"
+        imageSrc={
+          product.images && product.images.length > 0
+            ? "https://voamclothing.com" + product.images[0].filePath
+            : "../../assets/hoodie_icon.png"
+        }
+        url={`https://voamclothing.com/product/${product.id}`}
+      />
       <button
         className={styles.backButton}
         onClick={() => navigate(Path.Items)}

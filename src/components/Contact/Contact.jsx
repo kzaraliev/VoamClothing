@@ -3,43 +3,18 @@ import { FaTiktok, FaInstagram } from "react-icons/fa";
 import Accordion from "react-bootstrap/Accordion";
 
 import styles from "./Contact.module.css";
-import { Helmet } from "react-helmet-async";
+import SEO from "../SEO/SEO";
 
 function Contact() {
   return (
     <>
-      <Helmet>
-        <title>Voam Clothing | Contacts</title>
-        <meta
-          name="description"
-          content="Get in touch with Voam Clothing. Reach out through email or find us on Instagram and TikTok. Your feedback is always welcome!"
-        />
-        <meta property="og:title" content="Contact | Voam Clothing" />
-        <meta
-          property="og:description"
-          content="Get in touch with Voam Clothing. Reach out through email or find us on Instagram and TikTok. Your feedback is always welcome!"
-        />
-        <meta
-          property="og:image"
-          content="https://voamclothing.com/assets/banner.png"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://voamclothing.com/contacts" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact | Voam Clothing" />
-        <meta
-          name="twitter:description"
-          content="Get in touch with Voam Clothing. Reach out through email or find us on Instagram and TikTok. Your feedback is always welcome!"
-        />
-        <meta
-          name="twitter:image"
-          content="https://voamclothing.com/assets/banner.png"
-        />
-        <meta
-          property="twitter:url"
-          content="https://voamclothing.com/contacts"
-        />
-      </Helmet>
+      <SEO
+        title="Voam Clothing | Contacts"
+        description="Get in touch with Voam Clothing. Reach out through email or find us on Instagram and TikTok. Your feedback is always welcome!"
+        type="website"
+        imageSrc="https://voamclothing.com/assets/banner.png"
+        url="https://voamclothing.com/contacts"
+      />
       <div className={styles.contact}>
         <h1 className={styles.title}>Contacts</h1>
         <p className={styles.subtitle}>

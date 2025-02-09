@@ -8,6 +8,7 @@ import CartItem from "./CartItem.jsx";
 import Path from "../../utils/paths.js";
 import * as productService from "../../services/productService.js";
 import { Helmet } from "react-helmet-async";
+import SEO from "../SEO/SEO.jsx";
 
 export default function ShoppingCart() {
   const [cartData, setCartData] = useState([]);
@@ -78,38 +79,13 @@ export default function ShoppingCart() {
 
   return (
     <>
-      <Helmet>
-        <title>Voam Clothing | Shopping Cart</title>
-        <meta
-          name="description"
-          content="Review the items you've added to your cart and proceed to checkout at Voam Clothing."
-        />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Voam Clothing | Shopping Cart" />
-        <meta
-          property="og:description"
-          content="Review the items you've added to your cart and proceed to checkout at Voam Clothing."
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://voamclothing.com/shopping-cart"
-        />
-        <meta
-          property="og:image"
-          content="https://voamclothing.com/assets/banner.png"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Voam Clothing | Shopping Cart" />
-        <meta
-          name="twitter:description"
-          content="Review the items you've added to your cart and proceed to checkout at Voam Clothing."
-        />
-        <meta
-          name="twitter:image"
-          content="https://voamclothing.com/assets/banner.png"
-        />
-      </Helmet>
+      <SEO
+        title="Voam Clothing | Shopping Cart"
+        description="Review the items you've added to your cart and proceed to checkout at Voam Clothing."
+        type="website"
+        imageSrc="https://voamclothing.com/assets/banner.png"
+        url="https://voamclothing.com/shopping-cart"
+      />
       <div className={styles.shoppingCart}>
         <div className={styles.container}>
           <h1 className={styles.title}>Shopping Cart</h1>
