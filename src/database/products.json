@@ -1,5 +1,109 @@
 [
   {
+    "id": "f5487d27-f0fb-4943-8182-4d17c93e9012",
+    "name": "Murder your Memory Hoodie in Cream White",
+    "price": 105,
+    "availability": "In Stock",
+    "sizes": [
+      {
+        "name": "S"
+      },
+      {
+        "name": "M"
+      },
+      {
+        "name": "L"
+      }
+    ],
+    "images": [
+      {
+        "filePath": "/images/MyM_white_1.png"
+      },
+      {
+        "filePath": "/images/MyM_white_2.png"
+      }
+    ],
+    "description": "Oversized heavyweight hoodie with print on the hood and embroidery on the front & back representing the idea of letting go of the past - “Murder your memory”"
+  },
+  {
+    "id": "16141faa-2264-4c3e-8559-50b2f7c6006e",
+    "name": "Murder your Memory Hoodie in Red",
+    "price": 105,
+    "availability": "In Stock",
+    "sizes": [
+      {
+        "name": "S"
+      },
+      {
+        "name": "M"
+      },
+      {
+        "name": "L"
+      }
+    ],
+    "images": [
+      {
+        "filePath": "/images/MyM_red_1.png"
+      },
+      {
+        "filePath": "/images/MyM_red_2.png"
+      }
+    ],
+    "description": "Oversized heavyweight hoodie with print on the hood and embroidery on the front & back representing the idea of letting go of the past - “Murder your memory”"
+  },
+  {
+    "id": "a6610a61-0674-4326-9426-4e415285b7fb",
+    "name": "Knitwear Sweater",
+    "price": 80,
+    "availability": "In Stock",
+    "sizes": [
+      {
+        "name": "S"
+      },
+      {
+        "name": "M"
+      },
+      {
+        "name": "L"
+      }
+    ],
+    "images": [
+      {
+        "filePath": "/images/Knitwear_1.png"
+      },
+      {
+        "filePath": "/images/Knitwear_2.png"
+      }
+    ],
+    "description": "Knitted sweater with embroidery on the front & the sleeve, meant to contribute to the elegance of your fit"
+  },
+  {
+    "id": "17841c0e-2bfb-421e-8fa2-5beaedda96ff",
+    "name": "“Renaître” Longsleeve in Black",
+    "price": 65,
+    "availability": "In Stock",
+    "sizes": [
+      {
+        "name": "S"
+      },
+      {
+        "name": "M"
+      },
+      {
+        "name": "L"
+      }
+    ],
+    "images": [
+      {
+        "filePath": "/images/Renaitre_1.png"
+      },
+      {
+        "filePath": "/images/Renaitre_2.png"
+      }
+    ],
+    "description": "cropped longsleeve with oversized sleeves, representing our new collection with front, back and sleeve print"
+  },
+  {
     "id": "45ca5cff-27e2-4535-a8d5-2bac6a0d7cc8",
     "name": "AGWYT* GRAY TRACKSUIT",
     "price": 170,
