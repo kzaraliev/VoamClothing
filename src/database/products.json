@@ -2,7 +2,8 @@
   {
     "id": "f5487d27-f0fb-4943-8182-4d17c93e9012",
     "name": "Murder your Memory Hoodie in Cream White",
-    "price": 105,
+    "price": 90,
+    "anchor": 105,
     "availability": "In Stock",
     "sizes": [
       {
@@ -54,7 +55,8 @@
   {
     "id": "a6610a61-0674-4326-9426-4e415285b7fb",
     "name": "“Renaître” Knitwear Sweater",
-    "price": 80,
+    "price": 65,
+    "anchor": 80,
     "availability": "In Stock",
     "sizes": [
       {
@@ -80,7 +82,8 @@
   {
     "id": "17841c0e-2bfb-421e-8fa2-5beaedda96ff",
     "name": "“Renaître” Longsleeve in Black",
-    "price": 65,
+    "price": 55,
+    "anchor": 65,
     "availability": "In Stock",
     "sizes": [
       {
@@ -130,7 +133,7 @@
   {
     "id": "acd1d11a-e739-4415-ad8a-59365c52d01e",
     "name": "AGWYT* BLACK TRACKSUIT",
-    "price": 170,
+    "price": 150,
     "anchor": 205,
     "availability": "In Stock",
     "sizes": [
