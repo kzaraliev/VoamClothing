@@ -13,7 +13,7 @@ function Home() {
     <div className={styles.home}>
       <SEO
         title="Voam Clothing"
-        description="Discover the latest trends in fashion at Voam, your ultimate destination for stylish and affordable clothing. From chic dresses to casual essentials, explore our exclusive collection and find your perfect outfit for every occasion. Enjoy fast shipping, easy returns, and exceptional customer service. Shop now and elevate your wardrobe with Voam!"
+        description="Discover the latest trends in fashion at Voam, your ultimate destination for stylish and affordable clothing. From chic dresses to casual essentials, explore our exclusive collection and find your perfect outfit for every occasion. Enjoy fast shipping, easy returns, and exceptional customer service. Shop now and elevate your wardrobe with Voam Clothing!"
         type="website"
         imageSrc="https://voamclothing.com/assets/banner.png"
         url="https://voamclothing.com"
