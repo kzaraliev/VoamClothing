@@ -57,7 +57,7 @@
     "name": "“Renaître” Knitwear Sweater",
     "price": 65,
     "anchor": 80,
-    "availability": "In Stock",
+    "availability": "Out of Stock",
     "sizes": [
       {
         "name": "S"
@@ -84,7 +84,7 @@
     "name": "“Renaître” Longsleeve in Black",
     "price": 55,
     "anchor": 65,
-    "availability": "In Stock",
+    "availability": "Out of Stock",
     "sizes": [
       {
         "name": "S"
@@ -135,7 +135,7 @@
     "name": "AGWYT* BLACK TRACKSUIT",
     "price": 150,
     "anchor": 205,
-    "availability": "In Stock",
+    "availability": "Out of Stock",
     "sizes": [
       {
         "name": "M"
@@ -162,7 +162,7 @@
     "name": "AGWYT* BLACK HOODIE",
     "price": 85,
     "anchor": 110,
-    "availability": "In Stock",
+    "availability": "Out of Stock",
     "sizes": [
       {
         "name": "S"
@@ -276,7 +276,7 @@
     "name": "MIDNIGHT GREEN TRACKSUIT",
     "price": 100,
     "anchor": 180,
-    "availability": "In Stock",
+    "availability": "Out of Stock",
     "sizes": [
       {
         "name": "M"
