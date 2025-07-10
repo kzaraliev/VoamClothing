@@ -17,26 +17,40 @@ export default function ShoppingCart() {
     async function loadCartData() {
       const products = await Promise.all(
         cart.map(async (item) => {
-          const product = await productService.getOne(item.productId);
+          try {
+            const product = await productService.getOne(item.productId);
 
-          if (product.availability === "Out of Stock") {
-            // If the product is out of stock, skip it by returning null
+            // Check if product exists and is available
+            if (!product) {
+              // If the product doesn't exist, remove it from cart
+              removeFromCart(item.productId, item.size);
+              return null;
+            }
+
+            if (product.availability === "Out of Stock") {
+              // If the product is out of stock, skip it by returning null
+              removeFromCart(item.productId, item.size);
+              return null;
+            }
+
+            return {
+              productId: item.productId,
+              name: product.name,
+              size: item.size,
+              price: product.price,
+              quantity: item.quantity,
+              image: product.images[0]?.filePath || null,
+            };
+          } catch (error) {
+            // If there's an error fetching the product, remove it from cart
+            console.error(`Error fetching product ${item.productId}:`, error);
             removeFromCart(item.productId, item.size);
             return null;
           }
-
-          return {
-            productId: item.productId,
-            name: product.name,
-            size: item.size,
-            price: product.price,
-            quantity: item.quantity,
-            image: product.images[0]?.filePath || null,
-          };
         })
       );
 
-      // Filter out the null values from out-of-stock products
+      // Filter out the null values from non-existent or out-of-stock products
       setCartData(products.filter((product) => product !== null));
     }
     loadCartData();

@@ -8,8 +8,23 @@ export default function OrderItem({ productId, quantity, size, hasBorder }) {
   const [product, setProduct] = useState();
 
   useEffect(() => {
-    productService.getOne(productId).then((res) => setProduct(res));
-  }, []);
+    async function fetchProduct() {
+      try {
+        const productData = await productService.getOne(productId);
+        if (productData) {
+          setProduct(productData);
+        } else {
+          // Product doesn't exist, set as null to handle in render
+          setProduct(null);
+        }
+      } catch (error) {
+        console.error(`Error fetching product ${productId}:`, error);
+        // Product fetch failed, set as null to handle in render
+        setProduct(null);
+      }
+    }
+    fetchProduct();
+  }, [productId]);
 
   const imgSrc = product?.images?.[0] ? product.images[0].filePath : defaultImg;
 
@@ -17,6 +32,22 @@ export default function OrderItem({ productId, quantity, size, hasBorder }) {
     <>
       {product === undefined ? (
         <p>Loading...</p>
+      ) : product === null ? (
+        <li className={`${styles.cartItem} ${hasBorder ? styles.borderItems : ""}`}>
+          <div className={styles.productImgSection}>
+            <img
+              src={defaultImg}
+              alt="Product not found"
+              className={styles.imgCartItem}
+            />
+          </div>
+          <div className={styles.productData}>
+            <p className={styles.productName}>Продуктът не е наличен</p>
+            <p>Size {size}</p>
+            <p>Този продукт вече не съществува</p>
+            <p>Quantity: {quantity}</p>
+          </div>
+        </li>
       ) : (
         <li
           className={`${styles.cartItem} ${

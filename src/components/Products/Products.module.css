@@ -3,10 +3,10 @@
   margin: 0 auto;
   margin-bottom: 9px;
   display: grid;
-  gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 24px 0;
-  align-items: center;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 24px 12px;
+  align-items: start;
   justify-items: center;
 }
 
@@ -14,23 +14,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Ensure the item width remains consistent */
+  width: 100%;
+  max-width: 350px;
 }
 
 .cardLink {
   text-decoration: none;
-  width: 100%; /* Adjust width to prevent stretching */
+  width: 100%;
+  display: block;
 }
 
 .cardBackground {
   background-color: #2b3035bf !important;
   border: 2px solid #2b3035 !important;
-  width: 90%;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cardBackground:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .cardImg {
-  width: 24rem;
-  height: 24rem;
+  width: 100%;
+  height: 280px;
   object-fit: cover;
   background: #ccc;
 }
@@ -62,12 +71,14 @@
 }
 
 .centerSingleItem {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   justify-content: center;
   margin: 64px auto;
-  gap: 1rem; /* Adjust gap to prevent stretching */
-  width: 100%; /* Ensure the container spans the full width */
-  max-width: 1200px; /* Restrict the max-width for consistency */
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 12px;
 }
 
 .icon {
@@ -145,7 +156,68 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 24px 8px;
+    max-width: 100%;
+  }
+
+  .item {
+    max-width: none;
+  }
+
+  .cardImg {
+    height: 200px;
+  }
+
+  .cardTitle {
+    font-size: small !important;
+  }
+
+  .price,
+  .anchor {
+    font-size: x-small;
+  }
+
+  .header {
+    width: 95%;
+    margin: 16px 8px auto;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .centerSingleItem {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 8px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 24px 12px;
+    max-width: 95%;
+  }
+
+  .cardImg {
+    height: 240px;
+  }
+
+  .cardTitle {
+    font-size: medium !important;
+  }
+
+  .price,
+  .anchor {
+    font-size: small;
+  }
+
   .header {
     width: 90%;
   }
@@ -154,49 +226,70 @@
     font-size: 3rem;
   }
 
-  .grid {
-    max-width: 90%;
-    grid-template-columns: repeat(2, 1fr); /* Keep two columns for smaller screens */
-    gap: 1rem; /* Adjust the gap for smaller screens */
+  .centerSingleItem {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
   }
+}
 
-  .cardTitle {
-    font-size: medium !important;
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 95%;
   }
 
   .cardImg {
-    width: 100%; /* Adjust image width to fit the container */
-    height: auto; /* Adjust image height to maintain aspect ratio */
+    height: 260px;
+  }
+
+  .cardTitle {
+    font-size: large !important;
   }
 
   .price,
   .anchor {
-    font-size: small;
-  }
-
-  .item {
-    width: 100%; /* Ensure the item container fills the column */
-  }
-
-  .cardBackground {
-    width: 100%; /* Adjust card width to fill its container */
-  }
-
-  .button {
     font-size: medium;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
   .grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
     max-width: 90%;
+  }
+
+  .cardImg {
+    height: 280px;
   }
 
   .cardTitle {
     font-size: x-large !important;
   }
 
-  .price, .anchor {
+  .price,
+  .anchor {
     font-size: medium;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+  }
+
+  .cardImg {
+    height: 300px;
+  }
+
+  .cardTitle {
+    font-size: x-large !important;
+  }
+
+  .price,
+  .anchor {
+    font-size: large;
   }
 }

@@ -22,11 +22,22 @@ export default function CartItem({
 
   useEffect(() => {
     async function fetchProduct() {
-      const productData = await productService.getOne(productId);
-      setProduct(productData);
+      try {
+        const productData = await productService.getOne(productId);
+        if (productData) {
+          setProduct(productData);
+        } else {
+          // Product doesn't exist, trigger deletion from cart
+          onDelete(id, size);
+        }
+      } catch (error) {
+        console.error(`Error fetching product ${productId}:`, error);
+        // Product fetch failed, trigger deletion from cart
+        onDelete(id, size);
+      }
     }
     fetchProduct();
-  }, [productId]);
+  }, [productId, id, size, onDelete]);
 
   const imgSrc = product?.images?.[0] ? product.images[0].filePath : defaultImg;
 

@@ -1,10 +1,9 @@
 [
   {
-    "id": "f5487d27-f0fb-4943-8182-4d17c93e9012",
-    "name": "Murder your Memory Hoodie in Cream White",
-    "price": 90,
-    "anchor": 105,
-    "availability": "Out of Stock",
+    "id": "bc0c823e-4700-4507-810e-565389d90e31",
+    "name": "DEVOTION SET in Black",
+    "price": 110,
+    "availability": "In Stock",
     "sizes": [
       {
         "name": "S"
@@ -18,19 +17,19 @@
     ],
     "images": [
       {
-        "filePath": "/images/MyM_white_1.png"
+        "filePath": "/images/DevotionSet_Black_1.png"
       },
       {
-        "filePath": "/images/MyM_white_2.png"
+        "filePath": "/images/DevotionSet_Black_2.png"
       }
     ],
-    "description": "Oversized heavyweight hoodie with print on the hood and embroidery on the front & back representing the idea of letting go of the past - “Murder your memory”"
+    "description": "A heavyweight set featuring a pure cotton T-shirt and matching shorts, offering premium comfort, durability, and a relaxed fit."
   },
   {
-    "id": "16141faa-2264-4c3e-8559-50b2f7c6006e",
-    "name": "Murder your Memory Hoodie in Red",
-    "price": 105,
-    "availability": "Out of Stock",
+    "id": "bc0c823e-4700-4507-810e-565389d90e32",
+    "name": "DEVOTION SET in White",
+    "price": 110,
+    "availability": "In Stock",
     "sizes": [
       {
         "name": "S"
@@ -44,20 +43,224 @@
     ],
     "images": [
       {
-        "filePath": "/images/MyM_red_1.png"
+        "filePath": "/images/DevotionSet_White_1.png"
       },
       {
-        "filePath": "/images/MyM_red_2.png"
+        "filePath": "/images/DevotionSet_White_2.png"
       }
     ],
-    "description": "Oversized heavyweight hoodie with print on the hood and embroidery on the front & back representing the idea of letting go of the past - “Murder your memory”"
+    "description": "A heavyweight set featuring a pure cotton T-shirt and matching shorts, offering premium comfort, durability, and a relaxed fit."
   },
   {
-    "id": "a6610a61-0674-4326-9426-4e415285b7fb",
-    "name": "“Renaître” Knitwear Sweater",
+    "id": "547c094d-fa8b-4180-a905-1a27455f1e1f",
+    "name": "RENAÎTRE SET in Black",
+    "price": 115,
+    "availability": "In Stock",
+    "sizes": [
+      {
+        "name": "S"
+      },
+      {
+        "name": "M"
+      },
+      {
+        "name": "L"
+      }
+    ],
+    "images": [
+      {
+        "filePath": "/images/Renaitre_Black_1.png"
+      },
+      {
+        "filePath": "/images/Renaitre_Black_2.png"
+      }
+    ],
+    "description": "A heavyweight set featuring a pure cotton T-shirt and matching shorts, along with embroidered symbols resembling the brand's identity."
+  },
+  {
+    "id": "547c094d-fa8b-4180-a905-1a27455f1e1g",
+    "name": "RENAÎTRE SET in White",
+    "price": 115,
+    "availability": "In Stock",
+    "sizes": [
+      {
+        "name": "S"
+      },
+      {
+        "name": "M"
+      },
+      {
+        "name": "L"
+      }
+    ],
+    "images": [
+      {
+        "filePath": "/images/Renaitre_White_1.png"
+      },
+      {
+        "filePath": "/images/Renaitre_White_2.png"
+      }
+    ],
+    "description": "A heavyweight set featuring a pure cotton T-shirt and matching shorts, along with embroidered symbols resembling the brand's identity."
+  },
+  {
+    "id": "5a998680-7e52-4c27-9fd4-6579c3cea529",
+    "name": "DEVOTION TEE in Black",
+    "price": 60,
+    "availability": "In Stock",
+    "sizes": [
+      {
+        "name": "S"
+      },
+      {
+        "name": "M"
+      },
+      {
+        "name": "L"
+      }
+    ],
+    "images": [
+      {
+        "filePath": "/images/DevotionTee_Black_1.png"
+      },
+      {
+        "filePath": "/images/DevotionTee_Black_2.png"
+      }
+    ],
+    "description": "A heavyweight pure cotton T-shirt featuring our most popular design."
+  },
+  {
+    "id": "95954f79-2378-41a1-8468-dc71b3684a06",
+    "name": "DEVOTION TEE in White",
+    "price": 60,
+    "availability": "In Stock",
+    "sizes": [
+      {
+        "name": "S"
+      },
+      {
+        "name": "M"
+      },
+      {
+        "name": "L"
+      }
+    ],
+    "images": [
+      {
+        "filePath": "/images/DevotionTee_White_1.png"
+      },
+      {
+        "filePath": "/images/DevotionTee_White_2.png"
+      }
+    ],
+    "description": "A heavyweight pure cotton T-shirt featuring our most popular design."
+  },
+  {
+    "id": "21d51d34-3bc9-426e-b5ec-bf5656d918ea",
+    "name": "AGWYT TEE in Black",
+    "price": 60,
+    "availability": "In Stock",
+    "sizes": [
+      {
+        "name": "S"
+      },
+      {
+        "name": "M"
+      },
+      {
+        "name": "L"
+      }
+    ],
+    "images": [
+      {
+        "filePath": "/images/AGWYTTee_Black_1.png"
+      },
+      {
+        "filePath": "/images/AGWYTTee_Black_2.png"
+      }
+    ],
+    "description": "A heavyweight pure cotton Tee featuring a variation of our agwyt design."
+  },
+  {
+    "id": "21d51d34-3bc9-426e-b5ec-bf5656d918eb",
+    "name": "AGWYT TEE in White",
+    "price": 60,
+    "availability": "In Stock",
+    "sizes": [
+      {
+        "name": "S"
+      },
+      {
+        "name": "M"
+      },
+      {
+        "name": "L"
+      }
+    ],
+    "images": [
+      {
+        "filePath": "/images/AGWYTTee_White_1.png"
+      },
+      {
+        "filePath": "/images/AGWYTTee_White_2.png"
+      }
+    ],
+    "description": "A heavyweight pure cotton Tee featuring a variation of our agwyt design."
+  },
+  {
+    "id": "7ed789da-3ec3-47f3-a7b3-0ed58976f332",
+    "name": "DEVOTION SHORTS in Black",
+    "price": 60,
+    "availability": "In Stock",
+    "sizes": [
+      {
+        "name": "S"
+      },
+      {
+        "name": "M"
+      },
+      {
+        "name": "L"
+      }
+    ],
+    "images": [
+      {
+        "filePath": "/images/DevotionShorts_Black_1.png"
+      }
+    ],
+    "description": "Heavyweight pure cotton shorts with a relaxed fit and adjustable waist strings."
+  },
+  {
+    "id": "7ed789da-3ec3-47f3-a7b3-0ed58976f333",
+    "name": "DEVOTION SHORTS in White",
+    "price": 60,
+    "availability": "In Stock",
+    "sizes": [
+      {
+        "name": "S"
+      },
+      {
+        "name": "M"
+      },
+      {
+        "name": "L"
+      }
+    ],
+    "images": [
+      {
+        "filePath": "/images/DevotionShorts_White_1.png"
+      },
+      {
+        "filePath": "/images/DevotionShorts_White_2.png"
+      }
+    ],
+    "description": "Heavyweight pure cotton shorts with a relaxed fit and adjustable waist strings."
+  },
+  {
+    "id": "d089865b-7974-4b3e-83a9-605db23d4b41",
+    "name": "RENAÎTRE SHORTS in Black",
     "price": 65,
-    "anchor": 80,
-    "availability": "Out of Stock",
+    "availability": "In Stock",
     "sizes": [
       {
         "name": "S"
@@ -71,20 +274,19 @@
     ],
     "images": [
       {
-        "filePath": "/images/Knitwear_1.png"
+        "filePath": "/images/RenaitreShorts_Black_1.png"
       },
       {
-        "filePath": "/images/Knitwear_2.png"
+        "filePath": "/images/RenaitreShorts_Black_2.png"
       }
     ],
-    "description": "Knitted sweater with embroidery on the front & the sleeve, meant to contribute to the elegance of your fit"
+    "description": "Heavyweight pure cotton shorts with a relaxed fit and adjustable waist strings featuring a contrasting embroidery on the side."
   },
   {
-    "id": "17841c0e-2bfb-421e-8fa2-5beaedda96ff",
-    "name": "“Renaître” Longsleeve in Black",
-    "price": 55,
-    "anchor": 65,
-    "availability": "Out of Stock",
+    "id": "d089865b-7974-4b3e-83a9-605db23d4b42",
+    "name": "RENAÎTRE SHORTS in White",
+    "price": 65,
+    "availability": "In Stock",
     "sizes": [
       {
         "name": "S"
@@ -98,71 +300,19 @@
     ],
     "images": [
       {
-        "filePath": "/images/Renaitre_1.png"
+        "filePath": "/images/RenaitreShorts_White_1.png"
       },
       {
-        "filePath": "/images/Renaitre_2.png"
+        "filePath": "/images/RenaitreShorts_White_2.png"
       }
     ],
-    "description": "cropped longsleeve with oversized sleeves, representing our new collection with front, back and sleeve print"
+    "description": "Heavyweight pure cotton shorts with a relaxed fit and adjustable waist strings featuring a contrasting embroidery on the side."
   },
   {
-    "id": "45ca5cff-27e2-4535-a8d5-2bac6a0d7cc8",
-    "name": "AGWYT* GRAY TRACKSUIT",
-    "price": 170,
-    "anchor": 205,
-    "availability": "Out of Stock",
-    "sizes": [
-      {
-        "name": "M"
-      },
-      {
-        "name": "L"
-      }
-    ],
-    "images": [
-      {
-        "filePath": "/images/AGWYT_GRAY_TRACKSUIT2.jpg"
-      },
-      {
-        "filePath": "/images/AGWYT_GRAY_TRACKSUIT1.jpg"
-      }
-    ],
-    "description": "Comfortable hoodie with a relaxed fit and matching jogger bottoms, including a redesign of our staple mouth logo & print on the back"
-  },
-  {
-    "id": "acd1d11a-e739-4415-ad8a-59365c52d01e",
-    "name": "AGWYT* BLACK TRACKSUIT",
-    "price": 150,
-    "anchor": 205,
-    "availability": "Out of Stock",
-    "sizes": [
-      {
-        "name": "M"
-      },
-      {
-        "name": "L"
-      }
-    ],
-    "images": [
-      {
-        "filePath": "/images/AGWYT_BLACK_TRACKSUIT_MODEL.png"
-      },
-      {
-        "filePath": "/images/AGWYT_BLACK_TRACKSUIT1.jpg"
-      },
-      {
-        "filePath": "/images/AGWYT_BLACK_TRACKSUIT2.jpg"
-      }
-    ],
-    "description": "Comfortable hoodie with a relaxed fit and matching jogger bottoms, including a redesign of our staple mouth logo & print on the back"
-  },
-  {
-    "id": "8fd5e131-7947-4153-8677-426eee8d5908",
-    "name": "AGWYT* BLACK HOODIE",
-    "price": 85,
-    "anchor": 110,
-    "availability": "Out of Stock",
+    "id": "5dd3a5d2-d67e-4a1d-b404-a6c1bf279e52",
+    "name": "RENAÎTRE SHORTS in White",
+    "price": 65,
+    "availability": "In Stock",
     "sizes": [
       {
         "name": "S"
@@ -176,147 +326,126 @@
     ],
     "images": [
       {
-        "filePath": "/images/AGWYT_BLACK_HOODIE1.jpg"
+        "filePath": "/images/RenaitreShorts_White_1.png"
       },
       {
-        "filePath": "/images/AGWYT_BLACK_HOODIE2.jpg"
-      },
-      {
-        "filePath": "/images/AGWYT_BLACK_HOODIE3.jpg"
+        "filePath": "/images/RenaitreShorts_White_2.png"
       }
     ],
-    "description": "Soft, comfortable and unique hoodies, made from heavyweight cotton with an oversized fit, embracing our symbolic “grinding with your teeth” logo"
+    "description": "Heavyweight pure cotton shorts with a relaxed fit and adjustable waist strings featuring a contrasting embroidery on the side."
   },
   {
-    "id": "bf9e2321-592d-4f1f-8abf-c2a64d4fe886",
-    "name": "AGWYT* GRAY HOODIE",
-    "price": 85,
-    "anchor": 115,
-    "availability": "Out of Stock",
-    "sizes": [
-      {
-        "name": "S"
-      },
-      {
-        "name": "M"
-      },
-      {
-        "name": "L"
-      }
-    ],
-    "images": [
-      {
-        "filePath": "/images/AGWYT_GRAY_HOODIE1.jpg"
-      },
-      {
-        "filePath": "/images/AGWYT_GRAY_HOODIE2.jpg"
-      },
-      {
-        "filePath": "/images/AGWYT_GRAY_HOODIE3.jpg"
-      }
-    ],
-    "description": "Soft, comfortable and unique hoodies, made from heavyweight cotton with an oversized fit, embracing our symbolic “grinding with your teeth” logo"
-  },
-  {
-    "id": "f58bcd8b-352d-4dd8-a50f-1eb80100c944",
-    "name": "AGWYT* White Tee",
-    "price": 40,
-    "anchor": 60,
-    "availability": "Out of Stock",
+    "id": "576215e1-e64f-45fd-a955-b4c94ca4d129",
+    "name": "AGWYT TEE in Grey",
+    "price": 60,
+    "availability": "In Stock",
     "sizes": [
       {
         "name": "M"
-      },
-      {
-        "name": "L"
       }
     ],
     "images": [
       {
-        "filePath": "/images/AGWYT_WHITE_FR.png"
-      },
-      {
-        "filePath": "/images/AGWYT_WHITE_BK.png"
-      },
-      {
-        "filePath": "/images/AGWYT_WHITE_MODEL.png"
+        "filePath": "/images/AGWYTTee_Grey_1.png"
       }
     ],
-    "description": "This t-shirt features a relaxed fit. Made from soft, breathable cotton, it offers comfort and durability for everyday wear. Inspired by our emblematic mouth logo, remodeled by us. Crafted with love."
+    "description": "A heavyweight pure cotton Tee featuring a variation of our agwyt design."
   },
   {
-    "id": "fd13311d-6fd2-43e9-9d70-a6dc8125b431",
-    "name": "AGWYT* Black Tee",
-    "price": 40,
-    "anchor": 60,
-    "availability": "Out of Stock",
+    "id": "576215e1-e64f-45fd-a955-b4c94ca4d12a",
+    "name": "AGWYT TEE in Pink",
+    "price": 60,
+    "availability": "In Stock",
     "sizes": [
       {
         "name": "M"
-      },
-      {
-        "name": "L"
       }
     ],
     "images": [
       {
-        "filePath": "/images/AGWYT_BLACK_FR.png"
+        "filePath": "/images/AGWYTTee_Pink_1.png"
       },
       {
-        "filePath": "/images/AGWYT_BLACK_BK.png"
-      },
-      {
-        "filePath": "/images/AGWYT_BLACK_MODEL.png"
+        "filePath": "/images/AGWYTTee_Pink_2.png"
       }
     ],
-    "description": "This t-shirt features a relaxed fit. Made from soft, breathable cotton, it offers comfort and durability for everyday wear. Inspired by our emblematic mouth logo, remodeled by us. Crafted with love."
+    "description": "A heavyweight pure cotton Tee featuring a variation of our agwyt design."
   },
   {
-    "id": "f8c9b4d2-d78f-4a28-a88f-d2e8b5f14b74",
-    "name": "MIDNIGHT GREEN TRACKSUIT",
-    "price": 100,
-    "anchor": 180,
-    "availability": "Out of Stock",
+    "id": "576215e1-e64f-45fd-a955-b4c94ca4d12b",
+    "name": "AGWYT TEE in Peach Yellow",
+    "price": 60,
+    "availability": "In Stock",
     "sizes": [
       {
         "name": "M"
-      },
-      {
-        "name": "L"
       }
     ],
     "images": [
       {
-        "filePath": "/images/TRACKSUIT1.jpg"
+        "filePath": "/images/AGWYTTee_Pink_2.png"
       },
       {
-        "filePath": "/images/TRACKSUIT2.jpg"
-      },
-      {
-        "filePath": "/images/TRACKSUIT.png"
+        "filePath": "/images/AGWYTTee_Pink_1.png"
       }
     ],
-    "description": "A midnight green tracksuit with a hoodie and matching bottoms, offering a sleek, comfortable look with a streetwear vibe."
+    "description": "A heavyweight pure cotton Tee featuring a variation of our agwyt design."
   },
   {
-    "id": "f4a1a1e2-58bc-4d57-9dc7-0a58239a9f3e",
-    "name": "EMBROIDERY TEE BLACK",
-    "price": 40,
-    "anchor": 55,
-    "availability": "Out of Stock",
+    "id": "2499596a-bc3a-44e4-b946-b4a3aeefbf85",
+    "name": "DEVOTION TEE in Grey",
+    "price": 60,
+    "availability": "In Stock",
     "sizes": [
       {
-        "name": "L"
+        "name": "M"
       }
     ],
     "images": [
       {
-        "filePath": "/images/Embroidery-Tee-Black.jpg"
+        "filePath": "/images/DevotionTee_Grey_1.png"
       },
       {
-        "filePath": "/images/Embroidery-Tee.png"
+        "filePath": "/images/DevotionTee_Grey_2.png"
       }
     ],
-    "description": "Iconic design, long lasting with an embroidered logo"
+    "description": "A heavyweight pure cotton T-shirt featuring our most popular design."
+  },
+  {
+    "id": "2499596a-bc3a-44e4-b946-b4a3aeefbf86",
+    "name": "DEVOTION TEE in Pink",
+    "price": 60,
+    "availability": "In Stock",
+    "sizes": [
+      {
+        "name": "M"
+      }
+    ],
+    "images": [
+      {
+        "filePath": "/images/DevotionTee_Pink_1.png"
+      }
+    ],
+    "description": "A heavyweight pure cotton T-shirt featuring our most popular design."
+  },
+  {
+    "id": "2499596a-bc3a-44e4-b946-b4a3aeefbf87",
+    "name": "DEVOTION TEE in Peach Yellow",
+    "price": 60,
+    "availability": "In Stock",
+    "sizes": [
+      {
+        "name": "M"
+      }
+    ],
+    "images": [
+      {
+        "filePath": "/images/DevotionTee_Grey_2.png"
+      },
+      {
+        "filePath": "/images/DevotionTee_Grey_1.png"
+      }
+    ],
+    "description": "A heavyweight pure cotton T-shirt featuring our most popular design."
   }
 ]

@@ -26,22 +26,37 @@ export default function StepTwo({ changeActiveStep }) {
     async function fetchCartData() {
       const products = await Promise.all(
         cart.map(async (item) => {
-          const product = await productService.getOne(item.productId);
-          return {
-            ...item,
-            name: product.name,
-            price: product.price,
-            image: product.images[0]?.filePath || null,
-          };
+          try {
+            const product = await productService.getOne(item.productId);
+            
+            if (!product) {
+              // Product doesn't exist, skip it
+              return null;
+            }
+
+            return {
+              ...item,
+              name: product.name,
+              price: product.price,
+              image: product.images[0]?.filePath || null,
+            };
+          } catch (error) {
+            console.error(`Error fetching product ${item.productId}:`, error);
+            // Product fetch failed, skip it
+            return null;
+          }
         })
       );
 
-      const total = products.reduce(
+      // Filter out null values (non-existent products)
+      const validProducts = products.filter(product => product !== null);
+
+      const total = validProducts.reduce(
         (sum, item) => sum + item.price * item.quantity,
         0
       );
 
-      setCartData(products);
+      setCartData(validProducts);
       setTotalPrice(total);
     }
 
