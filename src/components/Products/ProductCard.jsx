@@ -4,6 +4,7 @@ import { FaTshirt } from "react-icons/fa";
 
 import styles from "./Products.module.css";
 import Path from "../../utils/paths";
+import { formatPrice } from "../../utils/currencyConverter";
 
 export default function ProductCard({ id, name, price, image, anchor }) {
   return (
@@ -17,8 +18,8 @@ export default function ProductCard({ id, name, price, image, anchor }) {
         />
         <Card.Body className={styles.cardBody}>
           <Card.Title className={styles.cardTitle}>{name}</Card.Title>
-          {anchor && <span className={styles.anchor}>{anchor} lv.</span>}
-          <Card.Text className={styles.price}>Price: {price} lv.</Card.Text> 
+          {anchor && <span className={styles.anchor}>{formatPrice(anchor)}</span>}
+          <Card.Text className={styles.price}>Price: {formatPrice(price)}</Card.Text> 
         </Card.Body>
       </Card>
     </Link>

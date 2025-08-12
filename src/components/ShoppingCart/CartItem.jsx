@@ -8,6 +8,7 @@ import {
 import * as productService from "../../services/productService";
 import defaultImg from "../../assets/hoodie_icon.png";
 import styles from "./ShoppingCart.module.css";
+import { formatPrice } from "../../utils/currencyConverter";
 
 export default function CartItem({
   id,
@@ -81,7 +82,7 @@ export default function CartItem({
             <p className={styles.productName}>{product.name}</p>
             <p className={styles.productSize}>Size: {size}</p>
             <p className={styles.productPrice}>
-              Price: {product.price * quantity} lv.
+              Price: {formatPrice(product.price * quantity)}
             </p>
             <div>
               <p className={styles.productQuantity}>

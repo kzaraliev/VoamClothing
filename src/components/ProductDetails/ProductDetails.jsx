@@ -15,6 +15,7 @@ import Path from "../../utils/paths";
 import styles from "./ProductDetails.module.css";
 import { OrderFormKeys } from "../../utils/constants";
 import SEO from "../SEO/SEO";
+import { formatPrice } from "../../utils/currencyConverter";
 
 export default function ProductDetails() {
   const { id } = useParams();
@@ -126,10 +127,10 @@ export default function ProductDetails() {
             <h1 className={styles.productName}>{product.name}</h1>
             <div className={styles.productInfo}>
               {product?.anchor && (
-                <p className={styles.anchor}>{product?.anchor} lv.</p>
+                <p className={styles.anchor}>{formatPrice(product?.anchor)}</p>
               )}
               <p className={styles.price}>
-                <b style={{ color: "#3b3b3b" }}>Price</b>: {product.price} lv.
+                <b style={{ color: "#3b3b3b" }}>Price</b>: {formatPrice(product.price)}
               </p>
               <p className={styles.description}>
                 <b style={{ color: "#3b3b3b" }}>Description</b>:{" "}

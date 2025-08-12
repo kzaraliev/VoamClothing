@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import * as productService from "../../../services/productService";
 import defaultImg from "../../../assets/hoodie_icon.png";
 import styles from "./StepTwo.module.css";
+import { formatPrice } from "../../../utils/currencyConverter";
 
 export default function OrderItem({ productId, quantity, size, hasBorder }) {
   const [product, setProduct] = useState();
@@ -64,7 +65,7 @@ export default function OrderItem({ productId, quantity, size, hasBorder }) {
           <div className={styles.productData}>
             <p className={styles.productName}>{product.name}</p>
             <p>Size {size}</p>
-            <p>Price: {product.price * quantity} lv.</p>
+            <p>Price: {formatPrice(product.price * quantity)}</p>
             <p>Quantity: {quantity}</p>
           </div>
         </li>

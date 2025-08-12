@@ -6,6 +6,7 @@ import * as orderService from "../../../services/orderService.js";
 import logoImg from "../../../assets/logo.png";
 import { useCart } from "../../../context/cartContext";
 import * as productService from "../../../services/productService.js";
+import { formatPriceWithPrecision } from "../../../utils/currencyConverter";
 
 export default function StepTwo({ changeActiveStep }) {
   const { cart } = useCart();
@@ -155,7 +156,7 @@ export default function StepTwo({ changeActiveStep }) {
               submitOrder();
             }}
           >
-            Place order ({cart === undefined ? "" : totalPrice.toFixed(2)} lv.)
+            Place order ({cart === undefined ? "" : formatPriceWithPrecision(totalPrice)})
           </button>
         </div>
       </div>

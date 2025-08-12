@@ -8,6 +8,7 @@ import CartItem from "./CartItem.jsx";
 import Path from "../../utils/paths.js";
 import * as productService from "../../services/productService.js";
 import SEO from "../SEO/SEO.jsx";
+import { formatPriceWithPrecision } from "../../utils/currencyConverter";
 
 export default function ShoppingCart() {
   const [cartData, setCartData] = useState([]);
@@ -138,13 +139,12 @@ export default function ShoppingCart() {
               <Link to={Path.Checkout}>
                 <button className={styles.submitButton} type="submit">
                   Proceed to checkout (
-                  {cartData
-                    .reduce(
+                  {formatPriceWithPrecision(
+                    cartData.reduce(
                       (total, item) => total + item.price * item.quantity,
                       0
                     )
-                    .toFixed(2)}{" "}
-                  lv.)
+                  )})
                 </button>
               </Link>
             )

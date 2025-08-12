@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 
 import styles from "./RecentlyAddedProducts.module.css";
 import Path from "../../../utils/paths";
+import { formatPrice } from "../../../utils/currencyConverter";
 
 import { Link } from "react-router-dom";
 
@@ -15,7 +16,7 @@ export default function RecentlyAddedProduct({ id, name, price, image }) {
         <Card.Body className={styles.cardBody}>
           <Card.Title className={styles.cardTitle}>{name}</Card.Title>
           <Card.Subtitle className={["mb-2", styles.cardPrice]}>
-            Price: {price} lv.
+            Price: {formatPrice(price)}
           </Card.Subtitle>
           <Button variant="success">View Details</Button>
         </Card.Body>
