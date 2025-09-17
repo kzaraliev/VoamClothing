@@ -2,7 +2,8 @@
   {
     "id": "bc0c823e-4700-4507-810e-565389d90e31",
     "name": "DEVOTION SET in Black",
-    "price": 110,
+    "price": 82.5,
+    "anchor": 110,
     "availability": "In Stock",
     "sizes": [
       {
@@ -28,7 +29,8 @@
   {
     "id": "bc0c823e-4700-4507-810e-565389d90e32",
     "name": "DEVOTION SET in White",
-    "price": 110,
+    "price": 82.5,
+    "anchor": 110,
     "availability": "In Stock",
     "sizes": [
       {
@@ -54,7 +56,8 @@
   {
     "id": "547c094d-fa8b-4180-a905-1a27455f1e1f",
     "name": "RENAÎTRE SET in Black",
-    "price": 115,
+    "price": 86.25,
+    "anchor": 115,
     "availability": "In Stock",
     "sizes": [
       {
@@ -80,7 +83,8 @@
   {
     "id": "547c094d-fa8b-4180-a905-1a27455f1e1g",
     "name": "RENAÎTRE SET in White",
-    "price": 115,
+    "price": 86.25,
+    "anchor": 115,
     "availability": "In Stock",
     "sizes": [
       {
@@ -106,7 +110,8 @@
   {
     "id": "5a998680-7e52-4c27-9fd4-6579c3cea529",
     "name": "DEVOTION TEE in Black",
-    "price": 60,
+    "price": 45,
+    "anchor": 60,
     "availability": "In Stock",
     "sizes": [
       {
@@ -132,7 +137,8 @@
   {
     "id": "95954f79-2378-41a1-8468-dc71b3684a06",
     "name": "DEVOTION TEE in White",
-    "price": 60,
+    "price": 45,
+    "anchor": 60,
     "availability": "In Stock",
     "sizes": [
       {
@@ -158,7 +164,8 @@
   {
     "id": "21d51d34-3bc9-426e-b5ec-bf5656d918ea",
     "name": "AGWYT TEE in Black",
-    "price": 60,
+    "price": 45,
+    "anchor": 60,
     "availability": "In Stock",
     "sizes": [
       {
@@ -184,7 +191,8 @@
   {
     "id": "21d51d34-3bc9-426e-b5ec-bf5656d918eb",
     "name": "AGWYT TEE in White",
-    "price": 60,
+    "price": 45,
+    "anchor": 60,
     "availability": "In Stock",
     "sizes": [
       {
@@ -210,7 +218,8 @@
   {
     "id": "7ed789da-3ec3-47f3-a7b3-0ed58976f332",
     "name": "DEVOTION SHORTS in Black",
-    "price": 60,
+    "price": 45,
+    "anchor": 60,
     "availability": "In Stock",
     "sizes": [
       {
@@ -233,7 +242,8 @@
   {
     "id": "7ed789da-3ec3-47f3-a7b3-0ed58976f333",
     "name": "DEVOTION SHORTS in White",
-    "price": 60,
+    "price": 45,
+    "anchor": 60,
     "availability": "In Stock",
     "sizes": [
       {
@@ -259,7 +269,8 @@
   {
     "id": "d089865b-7974-4b3e-83a9-605db23d4b41",
     "name": "RENAÎTRE SHORTS in Black",
-    "price": 65,
+    "price": 48.75,
+    "anchor": 65,
     "availability": "In Stock",
     "sizes": [
       {
@@ -285,7 +296,8 @@
   {
     "id": "d089865b-7974-4b3e-83a9-605db23d4b42",
     "name": "RENAÎTRE SHORTS in White",
-    "price": 65,
+    "price": 48.75,
+    "anchor": 65,
     "availability": "In Stock",
     "sizes": [
       {
@@ -311,7 +323,8 @@
   {
     "id": "5dd3a5d2-d67e-4a1d-b404-a6c1bf279e52",
     "name": "RENAÎTRE SHORTS in White",
-    "price": 65,
+    "price": 48.75,
+    "anchor": 65,
     "availability": "In Stock",
     "sizes": [
       {
@@ -337,7 +350,8 @@
   {
     "id": "576215e1-e64f-45fd-a955-b4c94ca4d129",
     "name": "AGWYT TEE in Grey",
-    "price": 60,
+    "price": 45,
+    "anchor": 60,
     "availability": "In Stock",
     "sizes": [
       {
@@ -354,7 +368,8 @@
   {
     "id": "576215e1-e64f-45fd-a955-b4c94ca4d12a",
     "name": "AGWYT TEE in Pink",
-    "price": 60,
+    "price": 45,
+    "anchor": 60,
     "availability": "Out of Stock",
     "sizes": [
       {
@@ -374,7 +389,8 @@
   {
     "id": "576215e1-e64f-45fd-a955-b4c94ca4d12b",
     "name": "AGWYT TEE in Peach Yellow",
-    "price": 60,
+    "price": 45,
+    "anchor": 60,
     "availability": "In Stock",
     "sizes": [
       {
@@ -394,7 +410,8 @@
   {
     "id": "2499596a-bc3a-44e4-b946-b4a3aeefbf85",
     "name": "DEVOTION TEE in Grey",
-    "price": 60,
+    "price": 45,
+    "anchor": 60,
     "availability": "In Stock",
     "sizes": [
       {
@@ -414,7 +431,8 @@
   {
     "id": "2499596a-bc3a-44e4-b946-b4a3aeefbf86",
     "name": "DEVOTION TEE in Pink",
-    "price": 60,
+    "price": 45,
+    "anchor": 60,
     "availability": "Out of Stock",
     "sizes": [
       {
@@ -431,7 +449,8 @@
   {
     "id": "2499596a-bc3a-44e4-b946-b4a3aeefbf87",
     "name": "DEVOTION TEE in Peach Yellow",
-    "price": 60,
+    "price": 45,
+    "anchor": 60,
     "availability": "In Stock",
     "sizes": [
       {
